@@ -13,9 +13,11 @@
 		5334F2FF20CBED650061AE0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5334F2FE20CBED650061AE0A /* Assets.xcassets */; };
 		5334F30220CBED650061AE0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5334F30020CBED650061AE0A /* LaunchScreen.storyboard */; };
 		5334F30520CBED650061AE0A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5334F30420CBED650061AE0A /* main.m */; };
+		96FF41D31C0B8753E9205831 /* libPods-ReaderTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 56E5ACFA633812E705C66158 /* libPods-ReaderTest.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		45797DA37A026AD142D65788 /* Pods-ReaderTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReaderTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReaderTest/Pods-ReaderTest.release.xcconfig"; sourceTree = "<group>"; };
 		5334F2F220CBED630061AE0A /* ReaderTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReaderTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5334F2F520CBED630061AE0A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5334F2F620CBED630061AE0A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		5334F30120CBED650061AE0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5334F30320CBED650061AE0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5334F30420CBED650061AE0A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		56E5ACFA633812E705C66158 /* libPods-ReaderTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReaderTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		86E770B27F252052EB7CCC3B /* Pods-ReaderTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReaderTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReaderTest/Pods-ReaderTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96FF41D31C0B8753E9205831 /* libPods-ReaderTest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				5334F2F420CBED630061AE0A /* ReaderTest */,
 				5334F2F320CBED630061AE0A /* Products */,
+				AE430C89E7A00AC2E7F18709 /* Pods */,
+				B4EDA81955F398B72C126753 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +78,23 @@
 			path = ReaderTest;
 			sourceTree = "<group>";
 		};
+		AE430C89E7A00AC2E7F18709 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				86E770B27F252052EB7CCC3B /* Pods-ReaderTest.debug.xcconfig */,
+				45797DA37A026AD142D65788 /* Pods-ReaderTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B4EDA81955F398B72C126753 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				56E5ACFA633812E705C66158 /* libPods-ReaderTest.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,6 +102,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5334F30820CBED650061AE0A /* Build configuration list for PBXNativeTarget "ReaderTest" */;
 			buildPhases = (
+				2856681353BA050E7E6B94B2 /* [CP] Check Pods Manifest.lock */,
 				5334F2EE20CBED630061AE0A /* Sources */,
 				5334F2EF20CBED630061AE0A /* Frameworks */,
 				5334F2F020CBED630061AE0A /* Resources */,
@@ -135,6 +160,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2856681353BA050E7E6B94B2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReaderTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5334F2EE20CBED630061AE0A /* Sources */ = {
@@ -281,14 +327,12 @@
 		};
 		5334F30920CBED650061AE0A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86E770B27F252052EB7CCC3B /* Pods-ReaderTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ReaderTest/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nemeanTaleStudios.ReaderTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -297,14 +341,12 @@
 		};
 		5334F30A20CBED650061AE0A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45797DA37A026AD142D65788 /* Pods-ReaderTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ReaderTest/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nemeanTaleStudios.ReaderTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
